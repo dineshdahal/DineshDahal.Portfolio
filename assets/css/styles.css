@@ -281,14 +281,15 @@ img {
   color: var(--first-color);
 }
 
-.skills__icon svg {
+.skills__icon svg,.skills__icon svg * {
   /* font-size: 2rem; */
   /* margin-right: var(--mb-2); */
+  fill: var(--first-color) !important;
   margin: none;
   padding: none;
-  height: 1.7rem;
-  width: 1.7rem;
-  color: var(--first-color);
+  height: 1.7rem !important;
+  width: 1.7rem !important;
+  color: var(--first-color) !important;
 }
 
 
@@ -330,6 +331,7 @@ img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+
 }
 .work__img img {
   transition: 1s;
@@ -338,6 +340,14 @@ img {
   transform: scale(1.1);
 }
 
+.work-desc{
+  padding:5px 5px 0 5px;
+}
+
+.work__img img {
+  height: 300px;
+  object-fit: contain;
+}
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
